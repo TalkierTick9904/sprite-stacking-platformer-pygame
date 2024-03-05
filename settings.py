@@ -207,3 +207,5 @@ if os.path.isdir(save_path):
         path = os.path.join(save_path, path)
         if os.path.isfile(path) and re.match("^.+\.txt$", path.split("/")[-1]): # type: ignore
             SAVES[path.split("/")[-1][:-4]] = path
+else:
+    os.mkdir(save_path)
