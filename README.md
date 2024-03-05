@@ -14,6 +14,10 @@ Then just run the `main.py` file, you can do this with this command:
 ```
 python main.py
 ```
+> Controls:\
+> WASD - move around\
+> Q and E - rotate camera\
+> F - shoot
 
 ## Demonstration
 https://github.com/TalkierTick9904/sprite-stacking-platformer-pygame/assets/141775541/2f9c1b55-a8a9-4973-8f6b-ad6d6d23502b
