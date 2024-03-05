@@ -307,7 +307,7 @@ class Game:
                     pygame.quit()
                     sys.exit()
                 elif event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
-                    ok = menu.check_click(event.pos)
+                    ok, _ = menu.check_click(event.pos)
                     if ok:
                         self.in_game = False
                         break

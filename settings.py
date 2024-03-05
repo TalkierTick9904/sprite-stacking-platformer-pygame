@@ -202,7 +202,8 @@ if not LEVELS:
 SAVES = dict()
 save_path = "data/saves"
 path_list = []
-for path in os.listdir(save_path):
-    path = os.path.join(save_path, path)
-    if os.path.isfile(path) and re.match("^.+\.txt$", path.split("/")[-1]): # type: ignore
-        SAVES[path.split("/")[-1][:-4]] = path
+if os.path.isdir(save_path):
+    for path in os.listdir(save_path):
+        path = os.path.join(save_path, path)
+        if os.path.isfile(path) and re.match("^.+\.txt$", path.split("/")[-1]): # type: ignore
+            SAVES[path.split("/")[-1][:-4]] = path

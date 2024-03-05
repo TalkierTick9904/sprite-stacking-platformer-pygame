@@ -107,7 +107,8 @@ class Bullet(BaseEntity):
             for sprite in hits:
                 # разрушение коробки
                 if sprite.name == "box":
-                    self.app.boxes_destroyed += 1
+                    if not self.enemy:
+                        self.app.boxes_destroyed += 1
                     pygame.mixer.Sound.play(SOUNDS["box"])
                     sprite.kill()
                 # если сталкивается с врагом

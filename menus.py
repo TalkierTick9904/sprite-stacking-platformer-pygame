@@ -327,7 +327,7 @@ class WinMenu(PauseMenu):
 
     def process_button(self, text):
         if text == "main menu":
-            return True
+            return True, ""
         elif text == "stats":
             caption = "\n".join((f"Coins collected: {self.app.coins_collected}", f"Enemies killed: {self.app.enemies_killed}", # type: ignore
                                  f"Bullets shot: {self.app.bullets_shot}", f"Boxes destroyed: {self.app.boxes_destroyed}", # type: ignore
@@ -337,7 +337,7 @@ class WinMenu(PauseMenu):
         elif text == "cancel":
             buttons = {"stats": pygame.Rect(0, 0, 0, 0), "main menu": pygame.Rect(0, 0, 0, 0)}
             self.set_ui("You won :)", buttons)
-        return False
+        return False, ""
 
 
 # класс меню поражения (методы те же, но кнопки и положение другое)
