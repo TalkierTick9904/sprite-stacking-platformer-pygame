@@ -1,0 +1,14 @@
+T W W W W W W W W W W W W T
+W 0 0 0 0 0 0 0 0 0 0 0 0 W
+W 0 D 0 0 0 E 0 G 0 C 0 0 W
+W 0 0 0 E G 0 0 0 R R G 0 W
+W 0 0 0 0 0 0 0 0 G 0 0 0 W
+W 0 G 0 0 B B B 0 0 0 0 0 W
+W 0 0 0 0 B C B 0 0 0 0 0 W
+W 0 0 0 0 B B B 0 E G G 0 W
+W 0 0 G G 0 0 0 0 0 0 0 0 W
+W 0 0 0 E 0 0 0 0 G G G 0 W
+W 0 G 0 0 0 0 0 0 G 0 0 0 W
+W 0 0 C G 0 0 0 0 0 0 P 0 W
+W 0 0 0 0 0 0 0 0 0 0 0 0 W
+T W W W W W W W W W W W W T
