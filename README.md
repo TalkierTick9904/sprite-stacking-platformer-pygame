@@ -16,10 +16,9 @@ python main.py
 ```
 
 ## Showcase
-The video is in super low quality, so it fits within the 10 mb limit for videos on github\
 https://github.com/TalkierTick9904/sprite-stacking-platformer-pygame/assets/141775541/2f9c1b55-a8a9-4973-8f6b-ad6d6d23502b
 
-
+The video is super low quality, so it fits within the 10 mb limit for videos on github
 
 ## Credits
 [This guy on youtube](https://youtube.com/watch?v=HcRWqchSZOE) - Thanks for showing how to implement the sprite stacking technique in pygame!\
