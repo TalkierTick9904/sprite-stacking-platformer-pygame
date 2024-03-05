@@ -15,7 +15,7 @@ Then just run the `main.py` file, you can do this with this command:
 python main.py
 ```
 
-## Showcase
+## Demonstration
 https://github.com/TalkierTick9904/sprite-stacking-platformer-pygame/assets/141775541/2f9c1b55-a8a9-4973-8f6b-ad6d6d23502b
 
 The video is in super low quality, so it fits within the 10 mb limit for videos on github
