@@ -1,5 +1,5 @@
 # sprite-stacking-platformer-pygame
-You wake up in some place surrounded by impenetrable walls, with a gun in your hand and you don't remember anything. You start walking around and collecting coins, after you have collected the last one, you hear the sound of a door unlocking. You walk through that door, teleport to the same spot with a different arrangement of items and... ALIENS?!?!?
+You wake up in some place surrounded by impenetrable walls, with a gun in your hand and you don't remember anything. You start walking around and collecting coins, after you have collected the last one, you hear the sound of a door unlocking. You walk through that door, teleport to the same spot with a different arrangement of items and... ALIENS?!?!?... WITH GUNS?!?!?
 
 ## Installation and launching
 First, clone the project and navigate to the project folder:
@@ -16,7 +16,7 @@ python main.py
 ```
 
 ## Showcase
-vid here
+
 
 ## Credits
 [This guy on youtube](https://youtube.com/watch?v=HcRWqchSZOE) - Thanks for showing how to implement the sprite stacking technique in pygame!\
