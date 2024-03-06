@@ -8,7 +8,7 @@ git clone https://github.com/TalkierTick9904/sprite-stacking-platformer-pygame &
 ```
 Then you will need to install the `pygame` and `PIL` libraries, they are defined in the requirements.txt file, so just run this command:
 ```
-pip -r requirements.txt
+pip install -r requirements.txt
 ```
 Then just run the `main.py` file, you can do this with this command:
 ```
