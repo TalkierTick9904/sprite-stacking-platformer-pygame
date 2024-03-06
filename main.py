@@ -63,7 +63,7 @@ class Game:
             # смена музыкальной темы, если игра запущена после поражения или победы
             if pygame.mixer.music.get_busy() and self.music_name != "main_theme":
                 pygame.mixer.music.fadeout(100)
-                pygame.mixer.music.load("assets/sounds/theme_main.wav")
+                pygame.mixer.music.load(Path("assets/sounds/theme_main.wav"))
                 pygame.mixer.music.play(-1, fade_ms=100)
             # обработка файла сохранения
             save = SAVES[self.loading_to[:-4]]
@@ -223,7 +223,7 @@ class Game:
                     # сохранение при нажатии определенной кнопки
                     elif name[-2:] == "_s":
                         name = name[:-2]
-                        SAVES[name] = f"data/saves/{name}.txt"
+                        SAVES[name] = Path(f"data/saves/{name}.txt")
                         with open(SAVES[name], "w") as file:
                             for key, val in self.to_save.items():
                                 file.write(f"{key} {val}\n")
@@ -259,7 +259,7 @@ class Game:
             channel.stop()
         if pygame.mixer.music.get_busy():
             pygame.mixer.music.fadeout(100)
-        pygame.mixer.music.load("assets/sounds/theme_main.wav")
+        pygame.mixer.music.load(Path("assets/sounds/theme_main.wav"))
         pygame.mixer.music.play(-1, fade_ms=100)
         self.music_name = "main_theme"
         menu = MainMenu(self.screen, self.font)
@@ -297,7 +297,7 @@ class Game:
             channel.stop()
         if pygame.mixer.music.get_busy():
             pygame.mixer.music.fadeout(100)
-        pygame.mixer.music.load("assets/sounds/theme_win.wav")
+        pygame.mixer.music.load(Path("assets/sounds/theme_win.wav"))
         pygame.mixer.music.play(-1, fade_ms=100)
         self.music_name = "win_theme"
         menu = WinMenu(self.screen, self.font, self)
@@ -330,7 +330,7 @@ class Game:
             channel.stop()
         if pygame.mixer.music.get_busy():
             pygame.mixer.music.fadeout(100)
-        pygame.mixer.music.load("assets/sounds/theme_lose.wav")
+        pygame.mixer.music.load(Path("assets/sounds/theme_lose.wav"))
         pygame.mixer.music.play(-1, fade_ms=100)
         self.music_name = "lose_menu"
         menu = LoseMenu(self.screen, self.font)

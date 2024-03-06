@@ -225,7 +225,7 @@ class PauseMenu:
             pygame.mixer.music.set_volume(MUSIC_VOLUME / 100)
             for _, sound in SOUNDS.items():
                 sound.set_volume(SFX_VOLUME / 100)
-            with open("data/settings.txt", "w") as file:
+            with open(Path("data/settings.txt"), "w") as file:
                 file.write(f"MUSIC_VOLUME {MUSIC_VOLUME}\nSFX_VOLUME {SFX_VOLUME}\n")
             buttons = {"resume": pygame.Rect(0, 0, 0, 0), "save": pygame.Rect(0, 0, 0, 0),
                        "load": pygame.Rect(0, 0, 0, 0), "settings": pygame.Rect(0, 0, 0, 0),
@@ -293,7 +293,7 @@ class MainMenu(PauseMenu):
             pygame.mixer.music.set_volume(MUSIC_VOLUME / 100)
             for _, sound in SOUNDS.items():
                 sound.set_volume(SFX_VOLUME / 100)
-            with open("data/settings.txt", "w") as file:
+            with open(Path("data/settings.txt"), "w") as file:
                 file.write(f"MUSIC_VOLUME {MUSIC_VOLUME}\nSFX_VOLUME {SFX_VOLUME}\n")
             buttons = {"new game": pygame.Rect(0, 0, 0, 0), "load": pygame.Rect(0, 0, 0, 0),
                        "settings": pygame.Rect(0, 0, 0, 0), "exit": pygame.Rect(0, 0, 0, 0)}
