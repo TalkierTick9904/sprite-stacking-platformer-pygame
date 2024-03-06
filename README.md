@@ -15,7 +15,7 @@ Then just run the `main.py` file, you can do this with this command:
 python main.py
 ```
 > Controls:\
-> WASD - move around\
+> WASD - move around (sprint with SHIFT)\
 > Q and E - rotate camera\
 > F - shoot
 
